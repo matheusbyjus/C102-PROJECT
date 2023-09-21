@@ -1,0 +1,63 @@
+.container{
+    text-align: center;
+    align-items: center;
+}
+#camera{
+width: 350px;
+height: 300px
+}
+.heading{
+    font-size: 50px;
+    background:linear-gradient(270deg,red,green,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3,p,b,label{
+letter-spacing: 5px;
+font-family: cursive;
+}
+button{
+    position: relative;
+padding: 1em 3em;
+color: blue;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+text-shadow: 0 0 0.5em blue;
+background-color: rgb(1, 1, 61);
+border: 0.25em solid blue;
+border-radius: 1em;
+box-shadow: 0 0 1em 0.25em blue,
+0 0 4em 1em rgb(4, 4, 182),
+inset 0 0 0.75em 0.25em blue;
+outline: none;
+cursor: pointer;
+transition: all 0.3s;
+}
+button::after{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(4, 4, 182,0.781) ;
+filter: blur(2em);
+opacity: 0.7;
+pointer-events: none;
+transform: perspective(1.5em)
+rotateX(35deg)
+scale(1,0.6);
+}
+button:hover{
+    color:rgb(1, 1, 61);
+    background-color: blue;
+    box-shadow: 0 0 1em 0.25em blue,
+    0 0 4em 2em rgb(4, 4, 182),
+    inset 0 0 0.75em 0.25em blue;
+}
+button:active{
+    box-shadow: 0 0 0.6em 0.25em blue,
+    0 0 2.5em 2em rgb(4, 4, 182),
+    inset 0 0 0.5em 0.25em blue;   
+}
