@@ -18,7 +18,7 @@ function foto(){
 
 console.log("ml5:",ml5.version);
 
-classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/VDpbVidrY/.json",modelLoaded);
+classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/VDpbVidrY/model.json",modelLoaded);
 
 function modelLoaded(){
     console.log("modelo carregado")
